@@ -1,0 +1,80 @@
+/* Main animated gradient headline */
+.contact-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #647dee, #000080, #33ffff 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 4s linear infinite;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Fancy card effect */
+.contact-card {
+  box-shadow: 0 6px 36px rgba(100, 100, 200, 0.1);
+  border-radius: 2rem;
+  padding: 2rem 2.5rem;
+  background: rgba(255,255,255,0.8);
+  transition: box-shadow 0.3s;
+  margin-bottom: 2rem;
+}
+
+/* Hover and focus effect for inputs and button */
+.contact-form input,
+.contact-form textarea {
+  border: 2px solid #eee;
+  border-radius: 8px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #000080;
+  box-shadow: 0 0 8px #33ffff;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #33ffff 60%,#000080 100%);
+  color: #20223e;
+  font-weight: bold;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 2px 16px #33ffff;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: #33ffff;
+  color: #000080;
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 4px 20px #33ffff88;
+}
+
+/* Animate the icons */
+.contact-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #33ffff 40%, rgb(0,0,128) 100%);
+  color:#000080;
+  font-size: 2rem;
+  box-shadow: 0 2px 18px #33ffff22;
+  transition: box-shadow 0.3s, background 0.3s;
+}
+
+.contact-icon:hover {
+  background: #33ffff;
+  color:#000080;
+  box-shadow: 0 4px 24px #33ffff88;
+}
